@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"> {% load static %}
+    <link rel="stylesheet" href="{% static 'MenuPage.css'%}" type="text/css">
+    <link rel="stylesheet" href="{% static 'HomePage_Main.css'%}" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="{% static 'NavBar.css'%}" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<title>Amanti Del Caffè</title>
+<div id="navbar">
+    <div class="logo">
+        <a href="/">Amanti Del Caffè</a>
+    </div>
+    <ul>
+      <li><a href="/">HOME</a></li>
+      <li><a href="Menu">MENU</a></li>
+      <li><a href="SignUp">CONTACT</a></li>
+      <li><a href="#">ABOUT</a></li>
+    </ul>
+  </div>
+  
+<body>
+    <header id="showcase" class="grid">
+        <div class="bg-image"></div>
+        <div class="content-wrap">
+        <h1 style="font-size:35px;">Our Menu</h1>
+            <a href="/" class="btn" id="button">Home Page</a>
+            <a href="NewsLetter" class="btn" id="button">Contact Us</a>
+        </div>
+    </header>
+    <div class="container-1">
+        <div class="box-1">
+            <i class="fa fa-phone"><span style="padding: 15px; font-family: 'Didact Gothic';"><a href="tel:(868) 236-8736">(868) 236-8736</a></span></i>
+            <p style="width: 250px;word-wrap: break-word; padding: 10px; text-align: justify;">A small river named Duden flows by their place and supplies.</p>
+
+        </div>
+        <div class="box-2">
+            <a href="https://www.google.com/maps/place/Amanti+del+caff%C3%A8/@10.448311,-61.444424,15z/data=!4m5!3m4!1s0x0:0x1799da43a5adcd78!8m2!3d10.448311!4d-61.444424" <i class="fa fa-address-book-o" href=""><span style="padding: 15px; font-family: 'Didact Gothic';">271 Southern Main Rd, Couva</span></i>
+        </a>
+            <p style="width: 250px;word-wrap: break-word; padding: 10px; text-align: justify;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut, facere!</p>
+        </div>
+        <div class="box-3">
+            <i class="fa fa-calendar-check-o"><span style="padding: 15px; font-family: 'Didact Gothic';">Monday- Saturday 7am-5pm</span></i>
+            <p style="width: 250px;word-wrap: break-word; padding: 10px; text-align: justify;">Saturday's 8am- 5pm</p>
+        </div>
+    </div>
+
+    <div class="background-test">
+
+        <div class="tab">
+            <div class="btn-group">
+                <button class="tablinks" onclick="openCity(event, 'pcake')">Pancakes</button>
+                <button class="tablinks" onclick="openCity(event, 'eg')">Eggs</button>
+                <button class="tablinks" onclick="openCity(event, 'pn')">Pannis</button>
+                <button class="tablinks" onclick="openCity(event, 'sb')">Subs</button>
+                <button class="tablinks" onclick="openCity(event, 'gf')">GlutenFree</button>
+            </div>
+            <div class="btn-group">
+                <button class="tablinks" onclick="openCity(event, 'wrp')">Wraps</button>
+                <button class="tablinks" onclick="openCity(event, 'cfe')">Coffee/Tea</button>
+                <button class="tablinks" onclick="openCity(event, 'frp')">Frappe/Chillers</button>
+                <button class="tablinks" onclick="openCity(event, 'smt')">Smoothies</button>
+            </div>
+        </div>
+
+        <div id="pcake" class="tabcontent">
+            <div class="box1-best">
+                <table>
+                    <tr>{% for mi in pcake_menu%}
+                        <th><img src="{{mi.item_picture.url}}"></th>
+                        <td>{{mi.item_name}} </td>
+                        <td align="right">${{mi.item_price}}</td>
+                    </tr>
+                    {% endfor %}
+                </table>
+            </div>
+        </div>
+
+        <div id="eg" class="tabcontent">
+            <table>
+                <tr>
+                    <br> {% for mi in egg_menu%}
+
+                    <td>{{mi.item_name}} </td>
+                    <td align="right">${{mi.item_price}}</td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+
+        <div id="pn" class="tabcontent">
+            <table>
+                <tr>
+                    <br> {% for mi in pannis_menu%}
+
+                    <td>{{mi.item_name}} </td>
+                    <td align="right">${{mi.item_price}}</td>
+                </tr>
+                {% endfor %}
+            </table>
+
+        </div>
+
+        <div id="sb" class="tabcontent">
+            <table>
+                <tr>
+                    <br> {% for mi in sub_menu%}
+
+                    <td>{{mi.item_name}} </td>
+                    <td align="right">${{mi.item_price}}</td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+
+        <div id="gf" class="tabcontent">
+            <table>
+                <tr>
+                    <br> {% for mi in gluten_free_menu%}
+
+                    <td>{{mi.item_name}} </td>
+                    <td align="right">${{mi.item_price}}</td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+
+
+        <div id="wrp" class="tabcontent">
+            <table>
+                <tr>
+                    <br> {% for mi in wrap_menu %}
+
+                    <td>{{mi.item_name}} </td>
+                    <td align="right">${{mi.item_price}}</td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+
+        <div id="cfe" class="tabcontent">
+            <table>
+                <tr>
+                    <br> {% for mi in coffee_menu %}
+
+                    <td>{{mi.item_name}} </td>
+                    <td align="right">${{mi.item_price}}</td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+
+        <div id="frp" class="tabcontent">
+            <table>
+                <tr>
+                    <br> {% for mi in frap_menu%}
+
+                    <td>{{mi.item_name}} </td>
+                    <td align="right">${{mi.item_price}}</td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+
+        <div id="smt" class="tabcontent">
+            <table>
+                <tr>
+                    <br> {% for mi in smoothie_menu %}
+
+                    <td>{{mi.item_name}} </td>
+                    <td align="right">${{mi.item_price}}</td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+        <script src="{% static 'Menu_Scroll.js' %}"></script>
+        <script src="{% static 'Menu_Tab.js' %}"></script>
+        <!-- Popular Item Start -->
+        <link rel="stylesheet" href="{% static 'MenuPage_pop.css'%}" type="text/css">
+
+        <div class="popheader">
+            <h3>Popular Items</h3>
+        </div>
+
+        <div class="popular-container">
+            <div class="popular-box">
+                <p>Pancakes</p>
+                <table>
+                    {%for i in p_cake %}
+                    <tr>
+                        <td style="text-align: left;">{{i.item_name}}</td>
+                        <td style="text-align:right;">${{i.item_price}}</td>
+                    </tr>
+                    {% endfor %}
+                </table>
+
+            </div>
+
+            <div class="popular-box2">
+                <p>Coffee/Teas</p>
+                <table>
+                    {%for i in tea %}
+                    <tr>
+                        <td style="text-align: left;">{{i.item_name}}</td>
+                        <td style="text-align:right;">${{i.item_price}}</td>
+                    </tr>
+                    {% endfor %}
+                </table>
+            </div>
+
+        </div>
+        <div class="popular-container">
+            <div class="popular-box">
+                <p>Frappuccino</p>
+                <table>
+                    {%for i in frap %}
+                    <tr>
+                        <td style="text-align: left;">{{i.item_name}}</td>
+                        <td style="text-align:right;">${{i.item_price}}</td>
+                    </tr>
+                    {% endfor %}
+                </table>
+
+            </div>
+
+            <div class="popular-box2">
+                <p>Subs</p>
+                <table>
+                    {%for i in subs %}
+                    <tr>
+                        <td style="text-align: left;">{{i.item_name}}</td>
+                        <td style="text-align:right;">${{i.item_price}}</td>
+                    </tr>
+                    {% endfor %}
+                </table>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+   <!-- Footer -->
+   <footer id="main-footer" class="grid">
+    <div>Amanit Del Caffè</div>
+    <div>Website by <a href="https://www.linkedin.com/in/quinn-sambrano-958422194/"> Quinn Sambrano</a></div>
+</footer>
+</html>

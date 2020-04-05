@@ -1,0 +1,55 @@
+
+/* Only when Screen is big have flex box */
+@media(min-width:768px){
+    .popular-container{
+     display: flex;
+     justify-content: center;
+   
+ }
+ .popular-container table{
+    width:500px;
+    margin: 10px;
+
+}
+.popular-container p{
+    text-align: left;
+    font-size: 20px;
+}
+
+
+ }
+
+.popular-container div{
+    text-align: center;
+    font-family: 'Didact Gothic';
+}
+
+
+.popular-box img{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+
+}
+.popular-container table{
+    margin: 20px;
+    padding: 20px;
+
+}
+
+
+.popular-container p{
+    margin-top: 10%;
+    text-align: left;
+    font-size: 30px;
+    color: #c49b63;
+    margin-left: 3%;
+}
+
+.popheader h3{
+font-size: 25px;
+font-weight: 300;
+font-family: 'Didact Gothic';
+text-align: center;
+color: #c49b63;
+}

@@ -1,0 +1,214 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin:0;
+    font-family: menulis;
+    background-color: #333;
+    color: white;
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+h1,h2,h3{
+    margin: 0;
+    padding: 1em 0;
+}
+a{
+    font-size: 13px;
+    font-family: 'Didact Gothic';
+}
+p{
+    margin: 0;
+    padding: 1em 0;
+}
+.btn{
+    margin-top: 13em;
+    display: inline-block;
+    opacity: 100;
+    color: white;
+    text-decoration: none;
+    padding:1.2em 1.2em;
+    border: .5px solid white;
+    font-weight: bold;
+    opacity: 0;
+    animation-name: btn;
+    animation-duration: .5s;
+    animation-delay: .5s;
+    animation-fill-mode: forwards;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    font-weight: bold;
+    transition: 0.3s;
+}
+@keyframes btn{
+    0%{
+       opacity: 0;
+   }
+    100%{
+       opacity: 1;
+   }
+}
+.btn:hover{
+    background: #c49b63;
+    color: black;
+    opacity: 1;
+}
+/* Header CSS */
+#showcase{
+   /* 450 PX IS THE HEIGHT OF THE FIRST GRID*/
+    min-height: 800px;
+    color: white;
+    text-align: center;
+}
+#showcase .bg-image {
+    position: absolute;
+    background-image: url(main_background1.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 800px;
+    z-index: -1;
+    opacity: 0.4;
+    background-attachment: fixed;
+}
+#showcase h1{
+    font-size: 50px;
+    padding-top: 100px;
+    padding-bottom: 0;
+    line-height: 1;
+    position: relative;
+    animation: heading;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+}
+@keyframes heading{
+    0%{
+        transform: translateY(-50px);
+   }
+    100%{
+        transform: translateY(140px);
+   }
+}
+#showcase .content-wrap{
+    padding:0 1.5em;
+}
+/* Section A */
+#section-a{
+    background:#c49b63;
+    color: white;
+    padding-bottom: .5em;
+    min-height: 100px;
+}
+/* Section B */
+#section-b{
+    padding: 2em 1em 1em;
+    background: rgb(2, 2, 2);
+}
+#section-b ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#section-b li{
+    margin-bottom:1em;
+    background: rgba(34, 34, 34, 0.555);
+    color: white;
+}
+.card-content{
+    padding: 1.5em;
+}
+/* Section C */
+#section-c{
+    background: grey;
+    color: white;
+    padding: 2em;
+}
+/* Section D */
+#section-d .box{
+    padding:2em;
+    color: white;
+}
+/* Footer*/
+#main-footer{
+    padding: 2em;
+    background: black;
+    color: white;
+    text-align: center;
+    text-decoration:none;
+}
+#main-footer a{
+    text-decoration:none;
+}
+/* Section_A */
+.container-1 div{
+    background: black;
+    padding:2px;
+    color: white;
+    font-family: 'Didact Gothic';
+    border-bottom: 1px solid rgba(128, 128, 128, 0.192);
+}
+.container-1 p{
+    color: grey;
+}
+.container-1 span{
+    font-weight: 600;
+    color: white;
+    font-size: 15px;
+}
+.container-1 i{
+    color: #c49b63;
+    font-size:15px;
+}
+.container-1 a{
+    text-decoration: none;
+    color: #c49b63;
+}
+.box-1 a{
+    font-family: 'Didact Gothic';
+    color: white;
+    font-size: 15px;
+}
+/* Media Query */
+@media(min-width:700px){
+   /* Section_A */
+    .container-1{
+        display: flex;
+   }
+    .container-1 div{
+        width:800px;
+        height: 150px;
+        border-bottom:none;
+   }
+    .grid{
+        display:grid;
+        grid-template-columns: 1fr repeat(2,minmax(auto,25em)) 1fr;
+   }
+    #section-a .content-text{
+        column-count: 2;
+        column-gap: 2em;
+   }
+    #section-a .content-text p{
+        padding-top: 0;
+   }
+    .content-wrap, #section-b ul{
+        grid-column: 2/4;
+   }
+    .box, #main-footer div{
+        grid-column: span 4;
+   }
+    #section-b ul{
+        display:flex;
+        justify-content: space-around;
+   }
+    #section-b li{
+        width:31%;
+   }
+}
+
+
+

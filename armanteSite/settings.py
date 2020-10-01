@@ -23,16 +23,15 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'w@6ms=l0axfdb9n=ql88o5i7arjkd30ulo6d3!5o#4#5^hybt^'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
 
 INSTALLED_APPS = [
     'posts',
-    'advanced_filters',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -75,6 +74,7 @@ WSGI_APPLICATION = 'armanteSite.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
+
 DATABASES = {
     'default': 
     {
@@ -87,6 +87,7 @@ DATABASES = {
 
     }
 }
+
 
 
 # Password validation
@@ -126,15 +127,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, "static")
+STATIC_ROOT = 'posts/static'
 
 
 MEDIA_URL='/media/'
 MEDIA_ROOT=os.path.join(BASE_DIR,'media')
-
-# EMAIL_BACKEND='django.core.mail.backends.smtp.EmailBackend'
-# EMAIL_HOST_USER='notquinn223@gmail.com'
-# EMAIL_HOST='smtp.gmail.com'
-# EMAIL_PORT=587
-# EMAIL_USE_TLS=True
-# EMAIL_HOST_PASSWORD='egghead101'

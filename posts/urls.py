@@ -1,4 +1,4 @@
-from django.conf.urls import url 
+from django.conf.urls import url
 from django.urls import path
 from . import views
 from django.conf import settings
@@ -8,5 +8,4 @@ urlpatterns=[
     url(r'^$',views.index , name='index'),
     path('Menu',views.Menu , name='Menu'),
     path('SignUp',views.SignUp, name='SignUp'),
-    path('Order',views.Order,name='Order'),
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

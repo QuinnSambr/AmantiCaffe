@@ -1,1 +1,1 @@
-web:python my_django_app/manage.py collectstatic --noinput;gunicorn armanteSite.wsgi
+web:python armanteSite/manage.py collectstatic --noinput;gunicorn armanteSite.wsgi

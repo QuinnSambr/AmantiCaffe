@@ -1,0 +1,378 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="/static/Nav.css" type="text/css">
+    <link rel="stylesheet" href="/static/HomePage_Main.css" type="text/css">
+    <link rel="stylesheet" href="/static/MenuPage.css" type="text/css">
+    <script src="/static/GoogleMapAPI.js"></script>
+    <script src="/static/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+</head>
+<title>Amanti Del Caffè</title>
+<body>
+    <div class="menu-wrap">
+        <input type="checkbox" class="toggler">
+        <div class="hamburger"><div></div></div>
+        <div class="menu">
+          <div>
+            <div>
+              <ul>
+                <li><a href="/">View Home</a></li>
+                <li><a href="Menu">View Menu</a></li>
+                <ul style="list-style-type: none;text-align:right;">
+                    <li><a style="color: inherit;text-decoration: none;" href="../../static/Menu_PDF.pdf">Menu PDF</a></li>
+                    <li><a style="color: inherit;text-decoration: none;" href="Menu#Breakfast">Breakfast</a></li>
+                    <li><a style="color: inherit;text-decoration: none;" href="Menu#Lunch">Lunch</a></li>
+                    <li><a style="color: inherit;text-decoration: none;" href="Menu#Drinks">Drinks</a></li>
+                </ul>
+                <li><a href="/#MoreInfo">About Us</a></li>
+                <li><a href="SignUp#Contact-More">Contact Us</a></li>
+                <li><a href="SignUp#Redirected">Sign Up Newsletter</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    <header id="showcase" class="grid">
+        <div class="bg-image"></div>
+        <div class="content-wrap">
+        <h1>Our Menu</h1>
+            <a href="/" class="btn" id="button">Home Page</a>
+            <a href="SignUp" class="btn" id="button">Contact Us</a>
+            <section id="section01" class="demo">
+              <br><br>
+              <a href="#Menu-Items"><span></span></a>
+            </section>
+        </div>
+
+    </header>
+<section>
+    <div class="container-1">
+        <div class="box-1">
+            <i class="fa fa-phone"><span style="padding: 15px; font-family: 'Quicksand', sans-serif;"><a href="tel:(868) 236-8736">(868) 236-8736</a></span></i>
+            <p style="width: 300px;word-wrap: break-word; padding: 10px;">Where you can find delicious treats to suit and dietary or culinary interests.</p>
+        </div>
+        <div class="box-2">
+            <a href="https://www.google.com/maps/place/Amanti+del+caff%C3%A8/@10.448311,-61.444424,15z/data=!4m5!3m4!1s0x0:0x1799da43a5adcd78!8m2!3d10.448311!4d-61.444424" <i class="fa fa-address-book-o" href=""><span style="padding: 15px; font-family: 'Quicksand', sans-serif;">271 Southern Main Rd, Couva</span></i>
+        </a>
+            <p style="width: 300px;word-wrap: break-word; padding: 10px;">A quaint little cafe that is bold in flavour!</p>
+        </div>
+        <div class="box-3">
+            <i class="fa fa-calendar-check-o"><span style="padding: 15px;  font-family: 'Quicksand', sans-serif;">Opening Hours</span></i>
+            <p style="width: 300px;word-wrap: break-word; padding: 10px;">Monday-Friday: 7am - 5pm<br> Saturday: 8am - 5pm<br>Sunday: Closed</p>
+        </div>
+    </div>
+
+</section>
+
+<section id="Menu-Items">
+<div class="background-c">
+<div class="ul-container">
+  <ul>
+    <h2 style="font-size:20px;">Menu PDF <a href="../../static/Menu_PDF.pdf" class="fa fa-folder-o" style="font-size:25px; text-decoration:none;color:inherit;"></a></h2>
+    <section id="Drinks">
+    <h2>Drinks</h2>
+    <section id="Coffee/Tea">
+    <h1 style="font-size: 20px;">Coffee/Tea</h1>
+    
+    <li>Americano<span>$15.00</span></li>
+    
+    <li>Espresso<span>$12.00</span></li>
+    
+    <li>Macchiato<span>$17.00</span></li>
+    
+    <li>Cappuccino<span>$23.00</span></li>
+    
+    <li>Cafe Latte<span>$26.00</span></li>
+    
+    <li>Café Mocha<span>$26.00</span></li>
+    
+    <li>Caramel Macchiato<span>$26.00</span></li>
+    
+    <li>Caramel Latte<span>$26.00</span></li>
+    
+    <li>Daily House Brew<span>$14.00</span></li>
+    
+    <li>Café Au Lait<span>$16.00</span></li>
+    
+    <li>Hot Chai Tea<span>$23.00</span></li>
+    
+    <li>Hot Chai Latte<span>$24.00</span></li>
+    
+    <li>Numi Tea (Assorted Organic Flavours)<span>$12.00</span></li>
+    
+    <li>Dulce De Leche<span>$26.00</span></li>
+    
+    <li>Regular Assorted Teas<span>$10.00</span></li>
+    
+    <li>Hot Chocolate<span>$16.00</span></li>
+    
+    </section>
+    <h1 style="font-size: 20px;">Frappuccino</h1>
+    
+    <li>Mocha Latte<span>$30.00</span></li>
+    
+    <li>Caramel Latte<span>$30.00</span></li>
+    
+    <li>White Chocolate<span>$30.00</span></li>
+    
+    <li>Java Chip<span>$30.00</span></li>
+    
+    <li>Vanilla Latte<span>$30.00</span></li>
+    
+    <li>Kona Mocha<span>$30.00</span></li>
+    
+    <li>Cookies and Cream<span>$30.00</span></li>
+    
+    <li>Bubble Gum<span>$30.00</span></li>
+    
+    <li>Cotton Candy<span>$30.00</span></li>
+    
+    <li>Green-Tea<span>$30.00</span></li>
+    
+    <h1 style="font-size: 20px;">Smoothies</h1>
+    
+    <li>Mango<span>$28.00</span></li>
+    
+    <li>Strawberry<span>$28.00</span></li>
+    
+    <li>Strawberry Banana<span>$28.00</span></li>
+    
+    <li>Wildberry<span>$28.00</span></li>
+    
+    <li>Pina Colada<span>$28.00</span></li>
+    
+    <li>Peach<span>$28.00</span></li>
+    
+    <li>Raspberry<span>$28.00</span></li>
+    
+    <li>Blueberry/Pomegranate<span>$28.00</span></li>
+    
+    </section>
+
+    <section id="Breakfast">
+    <h2>Breakfast</h2>
+    <h1 style="font-size: 20px;">Pancakes</h1>
+    
+    <li>3 Buttermilk Pancakes<span>$30.00</span></li>
+    
+    <li>3 Chocolate Chip Pancakes<span>$35.00</span></li>
+    
+    <li>3 Apple Cinnamon Pancakes<span>$35.00</span></li>
+    
+    <li>3 Strawberry Pancakes<span>$45.00</span></li>
+    
+    <li>Add Scrambled Eggs<span>$15.00</span></li>
+    
+    <li>Add Vegetable Egg Medley<span>$18.00</span></li>
+    
+    <li>Omelette Served with Toast<span>$50.00</span></li>
+    
+    <section id="Waffles">
+    <h1 style="font-size: 20px;">Waffles</h1>
+    
+    <li>Plain Waffles<span>$30.00</span></li>
+    
+    <li>Chocolate Chip Waffles<span>$35.00</span></li>
+    
+    <li>Apple Cinnamon Waffles<span>$35.00</span></li>
+    
+    <li>Strawberry Waffles<span>$45.00</span></li>
+    
+    <li>Add Scrambled Eggs<span>$15.00</span></li>
+    
+    <li>Add Vegetable Egg Medley<span>$18.00</span></li>
+    
+    <li>Add Fried Chicken Rings<span>$25.00</span></li>
+    
+    </section>
+    <h1 style="font-size: 20px;">Toast</h1>
+    
+    <li>White Bread With Scrambled Eggs<span>$35.00</span></li>
+    
+    <li>White Bread With Sunny Side Eggs<span>$35.00</span></li>
+    
+    <li>White Bread With Egg Medley<span>$40.00</span></li>
+    
+    <li>Wheat Bread With Scrambled Eggs<span>$37.00</span></li>
+    
+    <li>Wheat Bread With Sunny Side Eggs<span>$37.00</span></li>
+    
+    <li>Wheat Bread With Egg Medley<span>$45.00</span></li>
+    
+    <li>French Toast<span>$45.00</span></li>
+    
+    </section>
+
+    <section id="Lunch">
+    <h2>Lunch</h2>
+    <h1 style="font-size: 20px;">Hot Pasta</h1>
+    <li style="font-weight:bold;">Served With Garlic Bread</li>
+    
+    <li>Spaghetti and Meatball<span>$60.00</span></li>
+    
+    <li>Chicken Primavera<span>$55.00</span></li>
+    
+    <li>Chicken Alfredo<span>$70.00</span></li>
+    
+    <li>Vegetable Alfredo<span>$60.00</span></li>
+    
+    <h1 style="font-size: 20px;">Paninis</h1>
+    
+    <li>3 Cheese Melt<span>$32.00</span></li>
+    
+    <li>Chicken Salad<span>$35.00</span></li>
+    
+    <li>Grilled Chicken<span>$35.00</span></li>
+    
+    <li>Mexican Chicken<span>$40.00</span></li>
+    
+    <li>Mexican Beef<span>$42.00</span></li>
+    
+    <li>Tuna Salad<span>$35.00</span></li>
+    
+    <li>Turkey &amp; Cheese<span>$38.00</span></li>
+    
+    <li>Roast Beef<span>$42.00</span></li>
+    
+    <li>Vegetarian<span>$35.00</span></li>
+    
+    <li>Grilled Chicken with Cheese<span>$38.00</span></li>
+    
+    <li>Roast Beef with Cheese<span>$45.00</span></li>
+    
+    <li>Tuna Melt<span>$37.00</span></li>
+    
+    <h1 style="font-size: 20px;">Bagels</h1>
+    
+    <li>Eggs<span>$23.00</span></li>
+    
+    <li>Egg and Cheese<span>$25.00</span></li>
+    
+    <li>Chicken Salad<span>$30.00</span></li>
+    
+    <li>Tuna Melt<span>$27.00</span></li>
+    
+    <li>Cream Cheese<span>$25.00</span></li>
+    
+    <li>Turkey and Cheese<span>$30.00</span></li>
+    
+    <li>Tuna Salad<span>$27.00</span></li>
+    
+    <h1 style="font-size: 20px;">Subs</h1>
+    
+    <li>Mexican Chicken<span>$45.00</span></li>
+    
+    <li>Mexican Beef<span>$47.00</span></li>
+    
+    <li>Roast Beef with Cheese<span>$47.00</span></li>
+    
+    <li>Turkey and Cheese<span>$42.00</span></li>
+    
+    <li>Vegetarian<span>$35.00</span></li>
+    
+    <li>Meatball(Beef)<span>$45.00</span></li>
+    
+    <h1 style="font-size: 20px;">Wraps</h1>
+    <li style="font-weight:bold;">Plain or Spinach Wraps</li>
+    
+    <li>Mexican Chicken<span>$45.00</span></li>
+    
+    <li>Grilled Chicken<span>$45.00</span></li>
+    
+    <li>Chicken Salad<span>$45.00</span></li>
+    
+    <li>Mexican Beef<span>$47.00</span></li>
+    
+    <li>Roast beef with Cheese<span>$47.00</span></li>
+    
+    <li>Turkey and Cheese<span>$42.00</span></li>
+    
+    <li>Vegetarian Wrap<span>$35.00</span></li>
+    
+    <li>Tuna Salad<span>$45.00</span></li>
+    
+    <h1 style="font-size: 20px;">Fries</h1>
+    
+    <li>Gourmet Fries<span>$50.00</span></li>
+    
+    <li>Regular Fries<span>$25.00</span></li>
+    
+    <h1 style="font-size: 20px;">Salad</h1>
+    
+    <li>Ceasar Salad<span>$40.00</span></li>
+    
+    <li>Ambrosia Salad<span>$50.00</span></li>
+    
+
+    </section>
+
+
+  </ul>
+
+</div>
+<br><br>
+</div>
+
+</section>
+</body>
+<section id="Footer">
+  <div class="containerfooter">
+  <div class="boxFooter1">
+      <ul>
+          <li style="font-family: 'Satisfy', cursive;font-size: 20px; color: white; font-weight: 800;">Amanti Del Caffè</li>
+          <li style="font-size: 16px;font-weight: bold;color: #c49b63;">Find Us</li>
+          <br>
+          <li>Address: 271 Southern Main Rd, Couva</li>
+          <li>Phone: (868) 236-8736</li>
+          <li>Email: amantidelcafe1@gmail.com</li>
+
+      </ul>
+
+
+  </div>
+  <div class="boxFooter2">
+      <ul>
+          <br>
+          <li style="font-size: 16px; font-weight: bold;color: #c49b63;">Opening Hours</li>
+          <br>
+          <li>Monday-Friday: 7am - 5pm</li>
+          <li>Saturday: 8am - 5pm</li>
+          <li>Sunday: Closed</li>
+
+      </ul>
+  </div>
+  <div class="boxFooter3">
+      <ul>
+          <br>
+          <li style="font-size: 16px; font-weight: bold;color: #c49b63;">Follow Us</li>
+          <li style="letter-spacing: 5px;">
+              <br>
+              <a href="https://www.instagram.com/amantidelcaffe/?hl=en" ><i class="fa fa-instagram" style="font-size:24px"></i></a>
+              <a href="https://www.facebook.com/amanticaffe.tt/" ><i class="fa fa-facebook-official" style="font-size:24px "></i></a>
+              <a href="https://www.tripadvisor.co.nz/Restaurant_Review-g3526558-d13237981-Reviews-Amanti_del_Caffe-Couva_Trinidad_Trinidad_and_Tobago.html?m=19905"> <i class="fa fa-tripadvisor" style="font-size:24px"></i></a>
+
+          </li>
+      </ul>
+  </div>
+  </div>
+  <div class="lowerFooter">
+      <div class="lowera">
+          <p style="font-family: 'Quicksand', sans-serif; font-size: 15px;font-weight: 500;text-align: center;">© 2020 Amanti Del Cafe. All Rights Reserved.</p>
+      </div>
+      <div class="lowerb">
+          <a href="https://www.linkedin.com/in/quinn-sambrano-958422194/"><p style="font-family: 'Quicksand', sans-serif; font-size: 15px;font-weight: 500;text-align: center;">Developed by Quinn Sambrano</p>
+      </div>
+     </a>
+  </div>
+  </section>
+
+</html>

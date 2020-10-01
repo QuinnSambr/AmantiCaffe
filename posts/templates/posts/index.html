@@ -2,84 +2,176 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"> {% load static %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'Nav.css'%}" type="text/css">
     <link rel="stylesheet" href="{% static 'HomePage_Main.css'%}" type="text/css">
-    <link rel="stylesheet" href="{% static 'NavBar.css'%}" type="text/css">
+    <link rel="stylesheet" href="{% static 'CardPreview.css'%}" type="text/css">
+    <script src="{% static 'GoogleMapAPI.js'%}"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <!-- <script src="{% static 'Menu_Scroll.js' %}"></script> -->
-    <link rel="stylesheet" href="{% static 'HomePage_Pic.css'%}" type="text/css">
-
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,500" rel="stylesheet">
 
 </head>
 <title>Amanti Del Caffè</title>
-<!-- THIS WOULD BE SEEN IN THE GIT -->
-<!-- <header>
-    <div id="navbar">
-        <div class="logo">
-            <a href="/">Amanti Del Caffè</a>
-        </div>
-        <ul>
-          <li><a href="/">HOME</a></li>
-          <li><a href="Menu">MENU</a></li>
-          <li><a href="#">CONTACT</a></li>
-          <li><a href="NewsLetter">ABOUT</a></li>
-        </ul>
-      </div>
-</header> -->
-
 <body>
+    <div class="menu-wrap">
+        <input type="checkbox" class="toggler">
+        <div class="hamburger"><div></div></div>
+        <div class="menu">
+          <div>
+            <div>
+              <ul>
+                <li><a href="/">View Home</a></li>
+                <li><a href="Menu">View Menu</a></li>
+                <li><a href="SignUp">Contact Us</a></li>
+                
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
 
-          
     <header id="showcase" class="grid">
         <div class="bg-image"></div>
-        <div class="content-wrap">
-            <h1>Amanti Del Caffè</h1>
-            <P></P>
-            <a href="#main-footer" class="btn" id="button">Read More</a>
-            <a href="Menu" class="btn" id="button">View Menu</a>
-        </div>
+    <div class="content-wrap">
+          <h1>Amanti Del Caffè</h1>
+          <a href="#MoreInfo" class="btn" id="button">Read More</a>
+          <a href="Menu" class="btn" id="button">View Menu</a>
+          <section id="section01" class="demo">
+            <br><br>
+            <a href="#CardImages"><span></span></a>
+          </section>
+      </div>
     </header>
+
+    <div class="cardBackground">
+
     <div class="container-1">
         <div class="box-1">
-            <i class="fa fa-phone"><span style="padding: 15px; font-family: 'Didact Gothic';"><a href="tel:(868) 236-8736">(868) 236-8736</a></span></i>
-            <p style="width: 250px;word-wrap: break-word; padding: 10px; text-align: justify;">A small river named Duden flows by their place and supplies.</p>
+            <i class="fa fa-phone"><span style="padding: 15px; font-family: 'Quicksand', sans-serif;"><a href="tel:(868) 236-8736">(868) 236-8736</a></span></i>
+            <p style="width: 300px;word-wrap: break-word; padding: 10px;">A small river named Duden flows by their place and supplies.</p>
         </div>
         <div class="box-2">
-            <a href="https://www.google.com/maps/place/Amanti+del+caff%C3%A8/@10.448311,-61.444424,15z/data=!4m5!3m4!1s0x0:0x1799da43a5adcd78!8m2!3d10.448311!4d-61.444424" <i class="fa fa-address-book-o" href=""><span style="padding: 15px; font-family: 'Didact Gothic';">271 Southern Main Rd, Couva</span></i>
+            <a href="https://www.google.com/maps/place/Amanti+del+caff%C3%A8/@10.448311,-61.444424,15z/data=!4m5!3m4!1s0x0:0x1799da43a5adcd78!8m2!3d10.448311!4d-61.444424" <i class="fa fa-address-book-o" href=""><span style="padding: 15px; font-family: 'Quicksand', sans-serif;">271 Southern Main Rd, Couva</span></i>
         </a>
-            <p style="width: 250px;word-wrap: break-word; padding: 10px; text-align: justify;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut, facere!</p>
+            <p style="width: 300px;word-wrap: break-word; padding: 10px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut, facere!</p>
         </div>
         <div class="box-3">
-            <i class="fa fa-calendar-check-o"><span style="padding: 15px; font-family: 'Didact Gothic';">Monday- Saturday 7am-5pm</span></i>
-            <p style="width: 250px;word-wrap: break-word; padding: 10px; text-align: justify;">Saturday's 8am- 5pm</p>
+            <i class="fa fa-calendar-check-o"><span style="padding: 15px;  font-family: 'Quicksand', sans-serif;">Opening Hours</span></i>
+            <p style="width: 300px;word-wrap: break-word; padding: 10px;">Monday-Friday: 7am - 5pm<br> Saturday: 8am = 5pm<br>Sunday: Closed</p>
         </div>
     </div>
+
+
+<section id="MoreInfo">
+    <div class="containerStory">
+        <div class="storybox">
+            <h1 style="font-size: 20px; color: #c49b63;">Welcome</h1>
+            <h3 style="font-size: 30px;">Amanti Del Caffe</h3>
+           <p>This is a paragraph. It can contain a mix of text and links. You can write your own content here, and fill in the blanks. What's your story and where do you go from here? Tell the world about your business, and make this text yours.</p>
+           <a href="Menu">View Menu</a>
+        </div>
+    </div>
+</section>
+
+    <section id="Card">
+        <a href="Menu#Coffee/Tea">
+     <div class="card-container1">
+         <div class="box1A">
+         </div>
+         <div class="box2A">
+           <h1>In The Mood For Espresso ? </h1>
+           <p style="line-height: 2;">We appreciate not everyone is always looking for simply a cup of coffee every day. We want you to be able to bring in your friend who drinks every type of espresso. We personally love an afternoon Cafe Mocha with an extra shot in it.<br>(Click To View Menu)</p>
+         </div>
+     </div>
+     </a>
+     <a href="Menu#Waffles">
+     <div class="card-container2">
+         <div class="box2B">
+         </div>
+         <div class="box1B">
+             <h1>In The Mood For Waffles ?</h1>
+             <p style="line-height: 2;">Although we are best known for our coffee options, our menu includes a wide variety of other breakfast, lunch and dinner foods that can make your mouth water just by looking at the pictures. Specifically focusing on our selection of breakfast delights, we offer incredible Apple Cinnamon Waffles that are simply irresistible.<br>(Click To View Menu)</p>
+         </div>
+     </div>
+     </a>
+
+     </section>
+
+<section id="Location">
+<div class="mapContainer">
+    <div class="mapBox1" id="map">
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbKnToPFKf0ZTG32VKy4r7IzO0iky6DrU&callback=initMap"
+        type="text/javascript"></script>
+    </div>
+</div>
+</section>
+
+    <section id="CardImages">
     <div class="container-img">
-        <div class="box1-img">
-      
-        </div>
-        <div class="box2-img">
-      
-        </div>
-        <div class="box3-img">
-        </div>
-        <div class="box4-img">
-        </div>
-        
+        <div class="box1-img"></div>
+        <div class="box2-img"></div>
+        <div class="box3-img"></div>
+        <div class="box4-img"></div>
       </div>
-    <!-- <div class="container-2">
-        <div></div>
-    </div> -->
+    </section>
 
- 
 
+</div>
 </body>
-   <!-- Footer -->
-   <footer id="main-footer" class="grid">
-    <div>Amanit Del Caffè</div>
-    <div>Website by <a href="https://www.linkedin.com/in/quinn-sambrano-958422194/"> Quinn Sambrano</a></div>
+<footer>
+<section id="Footer">
+    <div class="containerfooter">
+    <div class="boxFooter1">
+        <ul>
+            <li style="font-family: 'Satisfy', cursive;font-size: 20px; color: white; font-weight: 800;">Amanti Del Caffè</li>
+            <li style="font-size: 16px;font-weight: bold;color: #c49b63;">Find Us</li>
+            <br>
+            <li>Address: 271 Southern Main Rd, Couva</li>
+            <li>Phone: (868) 236-8736</li>
+            <li>Email: info@domain.com</li>
+
+        </ul>
+
+
+    </div>
+    <div class="boxFooter2">
+        <ul>
+            <br>
+            <li style="font-size: 16px; font-weight: bold;color: #c49b63;">Opening Hours</li>
+            <br>
+            <li>Monday-Friday: 7am - 5pm</li>
+            <li>Saturday: 8am = 5pm</li>
+            <li>Sunday: Closed</li>
+
+        </ul>
+    </div>
+    <div class="boxFooter3">
+        <ul>
+            <br>
+            <li style="font-size: 16px; font-weight: bold;color: #c49b63;">Follow Us</li>
+            <li style="letter-spacing: 5px;">
+                <br>
+                <a href="https://www.instagram.com/amantidelcaffe/?hl=en" ><i class="fa fa-instagram" style="font-size:24px"></i></a>
+                <a href="https://www.facebook.com/amanticaffe.tt/" ><i class="fa fa-facebook-official" style="font-size:24px "></i></a>
+                <a href="https://www.tripadvisor.co.nz/Restaurant_Review-g3526558-d13237981-Reviews-Amanti_del_Caffe-Couva_Trinidad_Trinidad_and_Tobago.html?m=19905"> <i class="fa fa-tripadvisor" style="font-size:24px"></i></a>
+
+            </li>
+        </ul>
+    </div>
+    </div>
+    <div class="lowerFooter">
+        <div class="lowera">
+            <p style="font-family: 'Quicksand', sans-serif; font-size: 15px;font-weight: 500;text-align: center;">© 2020 Amanti Del Cafe. All Rights Reserved.</p>
+        </div>
+        <div class="lowerb">
+            <a href="https://www.linkedin.com/in/quinn-sambrano-958422194/"><p style="font-family: 'Quicksand', sans-serif; font-size: 15px;font-weight: 500;text-align: center;">Developed by Quinn Sambrano</p>
+        </div>
+       </a>
+    </div>
+    </section>
+
 </footer>
 </html>

@@ -1,169 +1,50 @@
-html{
-  scroll-behavior: smooth;
+
+/* Menu Options CSS */
+h1, h2{
+  font-family: 'Poppins', sans-serif;
+}
+.ul-container ul{
+font-family: 'Poppins', sans-serif;
+list-style-type: none;
+margin: 0;
+padding: 0;
+color: black;
+font-weight: 500;
 
 }
-
-
-.container1{
-  justify-content: center;
+.ul-container ul li{
+list-style-type: none;
+margin: 0;
+padding: 0.2rem 0.5rem;
+background-color: rgb(219, 219, 219);
+font-size: 11px;
+border-bottom: 1px solid rgba(128, 128, 128, 0.178);
 
 }
-.container1 h3{
-    font-family: menulis;
-    font-size: 30px;
-  }
-  
-  .container1 h1{
-    font-family: menulis;
-    font-size: 15px;
-  }
-  
-  .container1 h2{
-    width: 300px; 
-    font-family: menulis;
-    font-size: 10px;
-    word-wrap: break-word;
-  
-  }
-
-  @media(min-width: 768px){
-  .container1{
-  border:1px;
-  display: flex;
-  }
-
-  table {
-    border-collapse: collapse;
-    width: 50%;
-    margin: 0 auto;
-}
-  
-  
-  .container1 h1{
-    font-family: menulis;
-    font-size: 15px;
-  }
-  .box-1a{
-    flex:1;
-    order: 1;
-  }
-  .box-2a{
-    flex:1;
-    order: 2;
-  }
-  
-  .container1 h3{
-    font-family: menulis;
-    font-size: 30px;
-  }
-  .container1 h2{
-    font-family: menulis;
-    font-size: 10px;
-  }
-
-  }
-  .button-group{
-    display: block;
-    max-width: 300px;
-    margin: auto;
-  
-  }
-  
-  .tab {
-    overflow: hidden;
-    padding:5%;
+.ul-container span{
+font-weight: 600;
+font-size: 100px;
+font-size: 11px;
+float: right;
 }
 
-button {
-    background-color: Transparent;
-    font-family: 'Didact Gothic';
-    color: black;
-    text-decoration: none;
-    padding: 20px 15px;
-    margin: 0 3px;
-    cursor: pointer;
-    outline: none;
-    font-weight: 500;
-    font-size: 13px;
-    border: none;
-    border-bottom: 1px solid #ddd;
-    color: white;
+.ul-container{
+background-color: white;
+  margin-right:30%;
+  margin-left:20%;
 }
 
-/* Change background color of buttons on hover */
-
-.tab button:hover {
-    border-bottom: 1px solid #c49b63;
-    
-}
-/* Create an active/current tablink class */
-
-.tab button.active {
-    border-bottom: 2px solid #c49b63;
-    color: #c49b63;
-}
-/* Style the tab content */
-
-.tabcontent {
-    display: none;
-    animation: fadein .2s;
-}
-
-@keyframes fadein {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-table {
-    border-collapse: collapse;
-    /* width: 50%; */
-    margin: 0 auto;
-}
-
-th{
-  padding-top: 15px;
-}
-
-td {
-    border-bottom: 1px solid grey;
-    padding: 8px;
-    font-family: 'Didact Gothic';
-}
-
-.btn-group {
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
 
 @media screen and (max-width: 600px) {
-    table {
-        border-collapse: collapse;
-        width: 95%;
-        margin: 0 auto;
-    }
-}
-
-
-.section-b-popitem{
- color: grey;
+.ul-container{
+  margin-right: 10px;
+  margin-left:10px;
 
 }
 
-.background-test{
-  background: url(main_background2.webp);
-  background-attachment: fixed;
 }
-.box1-best img {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
+
+.background-c{
+background-image: url(../static/img/introimg.jpg);
+/* background-color: white; */
 }

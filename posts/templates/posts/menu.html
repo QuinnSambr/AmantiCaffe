@@ -2,250 +2,217 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8"> {% load static %}
-    <link rel="stylesheet" href="{% static 'MenuPage.css'%}" type="text/css">
-    <link rel="stylesheet" href="{% static 'HomePage_Main.css'%}" type="text/css">
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <link rel="stylesheet" href="{% static 'NavBar.css'%}" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'Nav.css'%}" type="text/css">
+
+  <link rel="stylesheet" href="{% static 'HomePage_Main.css'%}" type="text/css">
+  <link rel="stylesheet" href="{% static 'MenuPage.css'%}" type="text/css">
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:300,500" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
 </head>
-<title>Amanti Del Caffè</title>
-<div id="navbar">
-    <div class="logo">
-        <a href="/">Amanti Del Caffè</a>
-    </div>
-    <ul>
-      <li><a href="/">HOME</a></li>
-      <li><a href="Menu">MENU</a></li>
-      <li><a href="SignUp">CONTACT</a></li>
-      <li><a href="#">ABOUT</a></li>
-    </ul>
-  </div>
-  
-<body>
+<title>Amanti Del Caffè</title>  
+<body>  
+    <div class="menu-wrap">
+        <input type="checkbox" class="toggler">
+        <div class="hamburger"><div></div></div>
+        <div class="menu">
+          <div>
+            <div>
+              <ul>
+                <li><a href="/">View Home</a></li>
+                <li><a href="Menu">View Menu</a></li>
+                <ul style="list-style-type: none;text-align:right;">
+                    <li><a style="color: inherit;text-decoration: none;" href="../../static/Menu_PDF.pdf">Menu PDF</a></li>
+                    <li><a style="color: inherit;text-decoration: none;" href="Menu#Breakfast">Breakfast</a></li>
+                    <li><a style="color: inherit;text-decoration: none;" href="Menu#Lunch">Lunch</a></li>
+                    <li><a style="color: inherit;text-decoration: none;" href="Menu#Coffee/Tea">Coffee/Tea</a></li>
+                </ul>
+                <li><a href="/#MoreInfo">About Us</a></li>
+                <li><a href="SignUp#Contact-More">Contact Us</a></li>
+                <li><a href="SignUp#Redirected">Sign Up Newsletter</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     <header id="showcase" class="grid">
         <div class="bg-image"></div>
         <div class="content-wrap">
-        <h1 style="font-size:35px;">Our Menu</h1>
+        <h1>Our Menu</h1>
             <a href="/" class="btn" id="button">Home Page</a>
-            <a href="NewsLetter" class="btn" id="button">Contact Us</a>
+            <a href="SignUp" class="btn" id="button">Contact Us</a>
+            <section id="section01" class="demo">
+              <br><br>
+              <a href="#Menu-Items"><span></span></a>
+            </section>
         </div>
+   
     </header>
+<section>
     <div class="container-1">
-        <div class="box-1">
-            <i class="fa fa-phone"><span style="padding: 15px; font-family: 'Didact Gothic';"><a href="tel:(868) 236-8736">(868) 236-8736</a></span></i>
-            <p style="width: 250px;word-wrap: break-word; padding: 10px; text-align: justify;">A small river named Duden flows by their place and supplies.</p>
+      <div class="box-1">
+          <i class="fa fa-phone"><span style="padding: 15px; font-family: 'Quicksand', sans-serif;"><a href="tel:(868) 236-8736">(868) 236-8736</a></span></i>
+          <p style="width: 250px;word-wrap: break-word; padding: 10px; text-align: justify;">A small river named Duden flows by their place and supplies.</p>
+      </div>
+      <div class="box-2">
+          <a href="https://www.google.com/maps/place/Amanti+del+caff%C3%A8/@10.448311,-61.444424,15z/data=!4m5!3m4!1s0x0:0x1799da43a5adcd78!8m2!3d10.448311!4d-61.444424" <i class="fa fa-address-book-o" href=""><span style="padding: 15px; font-family: 'Quicksand', sans-serif;">271 Southern Main Rd, Couva</span></i>
+      </a>
+          <p style="width: 250px;word-wrap: break-word; padding: 10px; text-align: justify;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut, facere!</p>
+      </div>
+      <div class="box-3">
+          <i class="fa fa-calendar-check-o"><span style="padding: 15px;  font-family: 'Quicksand', sans-serif;">Monday- Saturday 7am-5pm</span></i>
+          <p style="width: 250px;word-wrap: break-word; padding: 10px; text-align: justify;">Saturday's 8am- 5pm</p>
+      </div>
+  </div>
+</section>
 
-        </div>
-        <div class="box-2">
-            <a href="https://www.google.com/maps/place/Amanti+del+caff%C3%A8/@10.448311,-61.444424,15z/data=!4m5!3m4!1s0x0:0x1799da43a5adcd78!8m2!3d10.448311!4d-61.444424" <i class="fa fa-address-book-o" href=""><span style="padding: 15px; font-family: 'Didact Gothic';">271 Southern Main Rd, Couva</span></i>
-        </a>
-            <p style="width: 250px;word-wrap: break-word; padding: 10px; text-align: justify;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut, facere!</p>
-        </div>
-        <div class="box-3">
-            <i class="fa fa-calendar-check-o"><span style="padding: 15px; font-family: 'Didact Gothic';">Monday- Saturday 7am-5pm</span></i>
-            <p style="width: 250px;word-wrap: break-word; padding: 10px; text-align: justify;">Saturday's 8am- 5pm</p>
-        </div>
-    </div>
+<section id="Menu-Items">
+<div class="background-c">
+<div class="ul-container">
+  <ul>
+    <h2>Full Menu <a href="../../static/Menu_PDF.pdf" class="fa fa-folder-o" style="font-size:25px; text-decoration:none;color:inherit;"></a></h2>
+    <section id="Breakfast">
+    <h2>Breakfast</h2>
+    <h1 style="font-size: 20px;">Pancakes</h1>
+    {% for x in p %}
+    <li><a data-fancybox="gallery" class="fa fa-file-image-o" href="{{x.item_picture.url}}" style="font-size:15px; text-decoration:none;color:inherit;">&nbsp;&nbsp;</a>{{x.item_name}}<span>${{x.item_price}}</span></li>
+    {% endfor %}
+    <h1 style="font-size: 20px;">Eggs/Omelette</h1>
+    {% for x in e %}
+    <li>{{x.item_name}}<span>${{x.item_price}}</span></li>
+    {% endfor %}
+    <section id="Waffles">
+    <h1 style="font-size: 20px;">Waffles</h1>
+    {% for x in wa %}
+    <li>{{x.item_name}}<span>${{x.item_price}}</span></li>
+    {% endfor %}
+</section>
+  </section>
+    <h1 style="font-size: 20px;">Bagels</h1>
+    {% for x in b %}
+    <li>{{x.item_name}}<span>${{x.item_price}}</span></li>
+    {% endfor %}
+    <h1 style="font-size: 20px;">Toast</h1>
+    {% for x in to %}
+    <li>{{x.item_name}}<span>${{x.item_price}}</span></li>
+    {% endfor %}
+    <h1 style="font-size: 20px;">Gluten-Free</h1>
+    {% for x in gf %}
+    <li>{{x.item_name}}<span>${{x.item_price}}</span></li>
+    {% endfor %}
+    <h1 style="font-size: 20px;">Desserts</h1>
+    {% for x in d %}
+    <li>{{x.item_name}}<span>${{x.item_price}}</span></li>
+    {% endfor %}
 
-    <div class="background-test">
+    <section id="Lunch">
+    <h2>Lunch</h2>
+    <h1 style="font-size: 20px;">Hot Pasta</h1>
+    {% for x in hp %}
+    <li>{{x.item_name}}<span>${{x.item_price}}</span></li>
+    {% endfor %}
+    <h1 style="font-size: 20px;">Pannis</h1>
+    {% for x in pn %}
+    <li>{{x.item_name}}<span>${{x.item_price}}</span></li>
+    {% endfor %}
+    <h1 style="font-size: 20px;">Subs</h1>
+    {% for x in s %}
+    <li>{{x.item_name}}<span>${{x.item_price}}</span></li>
+    {% endfor %}
+    <h1 style="font-size: 20px;">Wraps</h1>
+    {% for x in w %}
+    <li>{{x.item_name}}<span>${{x.item_price}}</span></li>
+    {% endfor %}
+    <h1 style="font-size: 20px;">Salad</h1>
+    {% for x in sa %}
+    <li>{{x.item_name}}<span>${{x.item_price}}</span></li>
+    {% endfor %}
+    <h1 style="font-size: 20px;">Fries</h1>
+    {% for x in fr %}
+    <li>{{x.item_name}}<span>${{x.item_price}}</span></li>
+    {% endfor %}
+    </section>
 
-        <div class="tab">
-            <div class="btn-group">
-                <button class="tablinks" onclick="openCity(event, 'pcake')">Pancakes</button>
-                <button class="tablinks" onclick="openCity(event, 'eg')">Eggs</button>
-                <button class="tablinks" onclick="openCity(event, 'pn')">Pannis</button>
-                <button class="tablinks" onclick="openCity(event, 'sb')">Subs</button>
-                <button class="tablinks" onclick="openCity(event, 'gf')">GlutenFree</button>
-            </div>
-            <div class="btn-group">
-                <button class="tablinks" onclick="openCity(event, 'wrp')">Wraps</button>
-                <button class="tablinks" onclick="openCity(event, 'cfe')">Coffee/Tea</button>
-                <button class="tablinks" onclick="openCity(event, 'frp')">Frappe/Chillers</button>
-                <button class="tablinks" onclick="openCity(event, 'smt')">Smoothies</button>
-            </div>
-        </div>
+    <section id="Drinks">
+    <h2>Drinks</h2>
+    <h1 style="font-size: 20px;">Smoothies</h1>
+    {% for x in sm %}
+    <li>{{x.item_name}}<span>${{x.item_price}}</span></li>
+    {% endfor %}
+    <h1 style="font-size: 20px;">Frappuccino</h1>
+    {% for x in f %}
+    <li>{{x.item_name}}<span>${{x.item_price}}</span></li>
+    {% endfor %}
+    <section id="Coffee/Tea">
+    <h1 style="font-size: 20px;">Coffee/Tea</h1>
+    {% for x in t %}
+    <li>{{x.item_name}}<span>${{x.item_price}}</span></li>
+    {% endfor %}
+    </section>
+    </section>
+  </ul>
 
-        <div id="pcake" class="tabcontent">
-            <div class="box1-best">
-                <table>
-                    <tr>{% for mi in pcake_menu%}
-                        <th><img src="{{mi.item_picture.url}}"></th>
-                        <td>{{mi.item_name}} </td>
-                        <td align="right">${{mi.item_price}}</td>
-                    </tr>
-                    {% endfor %}
-                </table>
-            </div>
-        </div>
+</div>
 
-        <div id="eg" class="tabcontent">
-            <table>
-                <tr>
-                    <br> {% for mi in egg_menu%}
+</div>
 
-                    <td>{{mi.item_name}} </td>
-                    <td align="right">${{mi.item_price}}</td>
-                </tr>
-                {% endfor %}
-            </table>
-        </div>
-
-        <div id="pn" class="tabcontent">
-            <table>
-                <tr>
-                    <br> {% for mi in pannis_menu%}
-
-                    <td>{{mi.item_name}} </td>
-                    <td align="right">${{mi.item_price}}</td>
-                </tr>
-                {% endfor %}
-            </table>
-
-        </div>
-
-        <div id="sb" class="tabcontent">
-            <table>
-                <tr>
-                    <br> {% for mi in sub_menu%}
-
-                    <td>{{mi.item_name}} </td>
-                    <td align="right">${{mi.item_price}}</td>
-                </tr>
-                {% endfor %}
-            </table>
-        </div>
-
-        <div id="gf" class="tabcontent">
-            <table>
-                <tr>
-                    <br> {% for mi in gluten_free_menu%}
-
-                    <td>{{mi.item_name}} </td>
-                    <td align="right">${{mi.item_price}}</td>
-                </tr>
-                {% endfor %}
-            </table>
-        </div>
-
-
-        <div id="wrp" class="tabcontent">
-            <table>
-                <tr>
-                    <br> {% for mi in wrap_menu %}
-
-                    <td>{{mi.item_name}} </td>
-                    <td align="right">${{mi.item_price}}</td>
-                </tr>
-                {% endfor %}
-            </table>
-        </div>
-
-        <div id="cfe" class="tabcontent">
-            <table>
-                <tr>
-                    <br> {% for mi in coffee_menu %}
-
-                    <td>{{mi.item_name}} </td>
-                    <td align="right">${{mi.item_price}}</td>
-                </tr>
-                {% endfor %}
-            </table>
-        </div>
-
-        <div id="frp" class="tabcontent">
-            <table>
-                <tr>
-                    <br> {% for mi in frap_menu%}
-
-                    <td>{{mi.item_name}} </td>
-                    <td align="right">${{mi.item_price}}</td>
-                </tr>
-                {% endfor %}
-            </table>
-        </div>
-
-        <div id="smt" class="tabcontent">
-            <table>
-                <tr>
-                    <br> {% for mi in smoothie_menu %}
-
-                    <td>{{mi.item_name}} </td>
-                    <td align="right">${{mi.item_price}}</td>
-                </tr>
-                {% endfor %}
-            </table>
-        </div>
-        <script src="{% static 'Menu_Scroll.js' %}"></script>
-        <script src="{% static 'Menu_Tab.js' %}"></script>
-        <!-- Popular Item Start -->
-        <link rel="stylesheet" href="{% static 'MenuPage_pop.css'%}" type="text/css">
-
-        <div class="popheader">
-            <h3>Popular Items</h3>
-        </div>
-
-        <div class="popular-container">
-            <div class="popular-box">
-                <p>Pancakes</p>
-                <table>
-                    {%for i in p_cake %}
-                    <tr>
-                        <td style="text-align: left;">{{i.item_name}}</td>
-                        <td style="text-align:right;">${{i.item_price}}</td>
-                    </tr>
-                    {% endfor %}
-                </table>
-
-            </div>
-
-            <div class="popular-box2">
-                <p>Coffee/Teas</p>
-                <table>
-                    {%for i in tea %}
-                    <tr>
-                        <td style="text-align: left;">{{i.item_name}}</td>
-                        <td style="text-align:right;">${{i.item_price}}</td>
-                    </tr>
-                    {% endfor %}
-                </table>
-            </div>
-
-        </div>
-        <div class="popular-container">
-            <div class="popular-box">
-                <p>Frappuccino</p>
-                <table>
-                    {%for i in frap %}
-                    <tr>
-                        <td style="text-align: left;">{{i.item_name}}</td>
-                        <td style="text-align:right;">${{i.item_price}}</td>
-                    </tr>
-                    {% endfor %}
-                </table>
-
-            </div>
-
-            <div class="popular-box2">
-                <p>Subs</p>
-                <table>
-                    {%for i in subs %}
-                    <tr>
-                        <td style="text-align: left;">{{i.item_name}}</td>
-                        <td style="text-align:right;">${{i.item_price}}</td>
-                    </tr>
-                    {% endfor %}
-                </table>
-            </div>
-
-        </div>
-
-    </div>
+</section>
 </body>
-   <!-- Footer -->
-   <footer id="main-footer" class="grid">
-    <div>Amanit Del Caffè</div>
-    <div>Website by <a href="https://www.linkedin.com/in/quinn-sambrano-958422194/"> Quinn Sambrano</a></div>
-</footer>
+<section id="Footer">
+  <div class="containerfooter">
+  <div class="boxFooter1">
+      <ul>
+          <li style="font-family: 'Satisfy', cursive;font-size: 20px; color: white; font-weight: 800;">Amanti Del Caffè</li>
+          <li style="font-size: 16px;font-weight: bold;color: #c49b63;">Find Us</li>
+          <br>
+          <li>Address: 271 Southern Main Rd, Couva</li>
+          <li>Phone: (868) 236-8736</li>
+          <li>Email: info@domain.com</li>
+
+      </ul>
+
+
+  </div>
+  <div class="boxFooter2">
+      <ul>
+          <br>
+          <li style="font-size: 16px; font-weight: bold;color: #c49b63;">Opening Hours</li>
+          <br>
+          <li>Monday-Friday: 7am - 5pm</li>
+          <li>Saturday: 8am = 5pm</li>
+          <li>Sunday: Closed</li>
+
+      </ul>
+  </div>
+  <div class="boxFooter3">
+      <ul>
+          <br>
+          <li style="font-size: 16px; font-weight: bold;color: #c49b63;">Follow Us</li>
+          <li style="letter-spacing: 5px;">
+              <br>
+              <a href="https://www.instagram.com/amantidelcaffe/?hl=en" ><i class="fa fa-instagram" style="font-size:24px"></i></a>
+              <a href="https://www.facebook.com/amanticaffe.tt/" ><i class="fa fa-facebook-official" style="font-size:24px "></i></a>
+              <a href="https://www.tripadvisor.co.nz/Restaurant_Review-g3526558-d13237981-Reviews-Amanti_del_Caffe-Couva_Trinidad_Trinidad_and_Tobago.html?m=19905"> <i class="fa fa-tripadvisor" style="font-size:24px"></i></a>
+
+          </li>
+      </ul>
+  </div>
+  </div>
+  <div class="lowerFooter">
+      <div class="lowera">
+          <p style="font-family: 'Quicksand', sans-serif; font-size: 15px;font-weight: 500;text-align: center;">© 2020 Amanti Del Cafe. All Rights Reserved.</p>
+      </div>
+      <div class="lowerb">
+          <a href="https://www.linkedin.com/in/quinn-sambrano-958422194/"><p style="font-family: 'Quicksand', sans-serif; font-size: 15px;font-weight: 500;text-align: center;">Developed by Quinn Sambrano</p>
+      </div>
+     </a>
+  </div>
+  </section>
+
 </html>

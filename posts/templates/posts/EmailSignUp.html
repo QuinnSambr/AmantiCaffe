@@ -2,78 +2,162 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    {% load staticfiles %}
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'Nav.css'%}" type="text/css">
     <link rel="stylesheet" href="{% static 'HomePage_Main.css'%}" type="text/css">
+    <script src="{% static 'GoogleMapAPI.js'%}"></script>
+    <link rel="stylesheet" href="{% static 'CardPreview.css'%}" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,500" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
 </head>
-    <header id="showcase" class="grid">
-        <div class="bg-image"></div>
-        <div class="content-wrap">
-            <h1>Amanti Del Caffè</h1>
-            <h1 style="font-size: 15px; font-weight: 500;">Contact Us</h1>
-            <a href="/" class="btn" id="button">Home Page</a>
-            <a href="Menu" class="btn" id="button">View Menu</a>
-        </div>
-    </header>
+<title>Amanti Del Caffè</title>
 <body>
-    <div class="container-1">
-        <div class="box-1">
-            <i class="fa fa-phone"><span style="padding: 15px; font-family: 'Didact Gothic';"><a href="tel:(868) 236-8736">(868) 236-8736</a></span></i>
-            <p style="width: 250px;word-wrap: break-word; padding: 10px; text-align: justify;">A small river named Duden flows by their place and supplies.</p>
+    <div class="menu-wrap">
+        <input type="checkbox" class="toggler">
+        <div class="hamburger"><div></div></div>
+        <div class="menu">
+          <div>
+            <div>
+              <ul>
+                <li><a href="/">View Home</a></li>
+                <li><a href="Menu">View Menu</a></li>
+                <li><a href="/#MoreInfo">About Us</a></li>
+                <li><a href="SignUp">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
 
+<header id="showcase" class="grid">
+    <div class="bg-image"></div>
+<div class="content-wrap">
+      <h1>Contact Us</h1>
+      <a href="/" class="btn" id="button">Home Page</a>
+      <a href="Menu" class="btn" id="button">View Menu</a>
+      <section id="section01" class="demo">
+        <br><br>
+        <a href="#Contact-More"><span></span></a>
+      </section>
+  </div>
+</header>
+
+<section id="Contact-More">
+    <div class="contact-wrap">
+        
+        <div class="container-form">
+        
+            <div class="infobox">
+        <h1 style="color: #c49b63;"><span> <i class="fa fa-address-book" style="font-size:21px"></i></span> Contact Information</h1>
+        <p>Address:<span style="font-family: 'Quicksand', sans-serif;"> 271 Southern Main Rd, Couva</span></p>
+        <p>Phone:<span style="font-family: 'Quicksand', sans-serif;"> (868)236-8736</span></p>
+        <p>Our Email:<span style="font-family: 'Quicksand', sans-serif;"> info@domain.com</span></p>
         </div>
-        <div class="box-2">
-            <a href="https://www.google.com/maps/place/Amanti+del+caff%C3%A8/@10.448311,-61.444424,15z/data=!4m5!3m4!1s0x0:0x1799da43a5adcd78!8m2!3d10.448311!4d-61.444424" <i class="fa fa-address-book-o" href=""><span style="padding: 15px; font-family: 'Didact Gothic';">271 Southern Main Rd, Couva</span></i>
-        </a>
-            <p style="width: 250px;word-wrap: break-word; padding: 10px; text-align: justify;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut, facere!</p>
-        </div>
-        <div class="box-3">
-            <i class="fa fa-calendar-check-o"><span style="padding: 15px; font-family: 'Didact Gothic';">Monday- Saturday 7am-5pm</span></i>
-            <p style="width: 250px;word-wrap: break-word; padding: 10px; text-align: justify;">Saturday's 8am- 5pm</p>
-        </div>
-    </div>
     
-     <style>
-         input[type=text]{
-            font-family: menulis;
-            display: block;
-            background-color:rgba(0, 0, 0, 0);
-            color:white;
-            border: none;
-            outline:none;
-            padding:1.5%;
-            width:95%;
-            border-bottom: 1px solid grey;
-         }
+            <div class="contactbox">
+                <section id="Location">
+                <div class="mapContainer">
+                    <div class="mapBox1" id="map">
+                        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbKnToPFKf0ZTG32VKy4r7IzO0iky6DrU&callback=initMap"
+                        type="text/javascript"></script>
+                    </div>
+                </div>
+            </section>
+            </div>
+        </div>
+    
+</section>
 
-     </style>
-   {% if messages %}
-   <ul class="messages">
-       {% for message in messages %}
-       <h1{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</h1>
-       {% endfor %}
-   </ul>
-   {% endif %}
-
-
-
-    <form method="POST">
-        {% csrf_token %}
-        <br>
-        <input type="text" name="email_name" placeholder="Full Name"  autocomplete="off"><br>
-        <input type="text" name="email_address" placeholder="Email Address" autocomplete="off"><br>
-        <input type="text" name="telephone_number" placeholder="Telephone Number" autocomplete="off"><br>
-        <input type="text" name="home_address" placeholder="Address (Optional)" autocomplete="off"><br>
-        <input type="text" name="description" placeholder="How You Heard About Us ?" autocomplete="off"><br>
-    <input type="radio"> <a>Are You Sure You Want to Subscribe to Email Newsletter</a><br>
+    
+<section id="Redirected">
+<div class="newsletter-back">
+<div class="newsletter">
+<h1 style="font-family: 'Quicksand', sans-serif; font-size: 23px;color: #c49b63;">Would You Like to Sign Up For a NewsLetter</h1>
+<div class="message">
+    {% if messages %}
+    <ul class="messages">
+        {% for message in messages %}
+        <p style="font-family: 'Quicksand', sans-serif; font-size: 15px;color: red;font-weight: bolder;" {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</p>
+        {% endfor %}
+    </ul>
+    {% endif %}
+</div>
+<form method="POST">
+    {% csrf_token %}
+    <input type="text" name="email_name" placeholder="Your Name"   autocomplete="off">
+    <input type="text" name="email_address" placeholder="Your Email"  autocomplete="off"><br><br>
+    <input type="text" name="telephone_number" placeholder="Phone Number"  autocomplete="off">
+    <input type="text" name="home_address" placeholder="Your Address " autocomplete="off"><br><br>
+    <textarea name="description" placeholder="How You Heard About Us ?" autocomplete="off" ></textarea><br><br>
+    <input type="radio"><a style="color: black;">Are You Sure You Want to Subscribe to Email Newsletter</a><br><br>
     <input id="post_email" type="submit" disabled="disabled">
-    </form>
-    <script>
-        $("input:radio").change(function () {$("#post_email").prop("disabled", false);});
-    </script>
+</form>
+</div>
+</div>
+</section>
+
+<script>
+    $("input:radio").change(function () {$("#post_email").prop("disabled", false);});
+</script>
+
 </body>
+
+<section id="Footer">
+    <div class="containerfooter">
+    <div class="boxFooter1">
+        <ul>
+            <li style="font-family: 'Satisfy', cursive;font-size: 20px; color: white; font-weight: 800;">Amanti Del Caffè</li>
+            <li style="font-size: 16px;font-weight: bold;color: #c49b63;">Find Us</li>
+            <br>
+            <li>Address: 271 Southern Main Rd, Couva</li>
+            <li>Phone: (868) 236-8736</li>
+            <li>Email: info@domain.com</li>
+        </ul>
+
+
+    </div>
+    <div class="boxFooter2">
+        <ul>
+            <br>
+            <li style="font-size: 16px; font-weight: bold;color: #c49b63;">Opening Hours</li>
+            <br>
+            <li>Monday-Friday: 7am - 5pm</li>
+            <li>Saturday: 8am - 5pm</li>
+            <li>Sunday: Closed</li>
+
+        </ul>
+    </div>
+    <div class="boxFooter3">
+        <ul>
+            <br>
+            <li style="font-size: 16px; font-weight: bold;color: #c49b63;">Follow Us</li>
+            <li style="letter-spacing: 5px;">
+                <br>
+                <a href="https://www.instagram.com/amantidelcaffe/?hl=en" ><i class="fa fa-instagram" style="font-size:24px;color: #c49b63;"></i></a>
+                <a href="https://www.facebook.com/amanticaffe.tt/" ><i class="fa fa-facebook-official" style="font-size:24px;color: #c49b63;"></i></a>
+                <a href="https://www.tripadvisor.co.nz/Restaurant_Review-g3526558-d13237981-Reviews-Amanti_del_Caffe-Couva_Trinidad_Trinidad_and_Tobago.html?m=19905"> <i class="fa fa-tripadvisor" style="font-size:24px;color: #c49b63;"></i></a>
+
+            </li>
+        </ul>
+    </div>
+    </div>
+    <div class="lowerFooter">
+        <div class="lowera">
+            <p style="font-family: 'Quicksand', sans-serif; font-size: 15px;font-weight: 500;text-align: center;">© 2020 Amanti Del Cafe. All Rights Reserved.</p>
+        </div>
+        <div class="lowerb">
+            <a href="https://www.linkedin.com/in/quinn-sambrano-958422194/"><p style="font-family: 'Quicksand', sans-serif; font-size: 15px;font-weight: 500;text-align: center;">Developed by Quinn Sambrano</p>
+        </div>
+       </a>
+    </div>
+    </section>
+
 </html>

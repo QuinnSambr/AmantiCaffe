@@ -1,4 +1,4 @@
-from django import forms
+# from django import forms
 
-class MenuLoad(forms.Form):
-    item_category = forms.CharField()
+# class MenuLoad(forms.Form):
+#     item_category = forms.CharField()

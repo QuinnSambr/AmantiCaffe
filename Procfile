@@ -1,1 +1,1 @@
-web:python armanteSite/manage.py collectstatic --noinput;gunicorn armanteSite.wsgi
+web:gunicorn armanteSite.wsgi

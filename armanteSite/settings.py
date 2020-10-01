@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'w@6ms=l0axfdb9n=ql88o5i7arjkd30ulo6d3!5o#4#5^hybt^'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -48,9 +48,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-
 ]
-
 
 ROOT_URLCONF = 'armanteSite.urls'
 
@@ -76,20 +74,14 @@ WSGI_APPLICATION = 'armanteSite.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
-
 # DATABASES = {
-#     'default': 
+#     'default':
 #     {
 #         'ENGINE': 'django.db.backends.mysql',
-#         'HOST':'sh4ob67ph9l80v61.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
-#         'DATABASE':'ta5t7k4nvsjm4kb3',
-#         'NAME':'amante_db',
-#         'USER':'puwq8d7nrh1cj9q5',
-#         'PASSWORD':'qidu8asg0k0w1o2b',
-#         'HOST':'localhost',
-#         'PORT':'3306',
-
-
+#         # 'NAME':'MrQuinny$amante_db',
+#         # 'USER':'MrQuinny',
+#         # 'PASSWORD':'egghead101',
+#         # 'HOST':'MrQuinny.mysql.pythonanywhere-services.com'
 
 #     }
 # }
@@ -131,6 +123,7 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
+
 STATIC_URL = '/static/'
 STATIC_ROOT = 'posts/static'
 

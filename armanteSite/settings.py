@@ -85,11 +85,15 @@ DATABASES = {
     'default': 
     {
         'ENGINE': 'django.db.backends.mysql',
+        'HOST':'sh4ob67ph9l80v61.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
+        'DATABASE':'ta5t7k4nvsjm4kb3',
         'NAME':'amante_db',
-        'USER':'root',
-        'PASSWORD':'',
+        'USER':'puwq8d7nrh1cj9q5',
+        'PASSWORD':'qidu8asg0k0w1o2b',
         'HOST':'localhost',
         'PORT':'3306',
+
+
 
     }
 }

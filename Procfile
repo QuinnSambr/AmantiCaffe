@@ -1,1 +1,1 @@
-web:gunicorn armanteSite.wsgi
+web: gunicorn armanteSite.wsgi

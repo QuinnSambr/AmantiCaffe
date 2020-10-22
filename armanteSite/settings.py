@@ -73,18 +73,15 @@ WSGI_APPLICATION = 'armanteSite.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
-DATABASES = {
-    'default':
-    {
+DATABASES = { 
+    'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME':'MrQuinny$amante_db',
-        'USER':'MrQuinny',
-        'PASSWORD':'egghead101',
-        'HOST':'MrQuinny.mysql.pythonanywhere-services.com'
-
+        'NAME': 'nqr9rzfupf3jqbzs',
+        'USER': 'xud1fnx390hgm5lf'	,
+        'PASSWORD': 'e1sy1ukogrjf0clc',
+        'HOST': 'durvbryvdw2sjcm5.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
     }
 }
-
 
 
 

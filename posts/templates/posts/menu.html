@@ -5,19 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {% load static %}
     <link rel="stylesheet" href="{% static 'Nav.css'%}" type="text/css">
-
-  <link rel="stylesheet" href="{% static 'HomePage_Main.css'%}" type="text/css">
-  <link rel="stylesheet" href="{% static 'MenuPage.css'%}" type="text/css">
-  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Quicksand:300,500" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'HomePage_Main.css'%}" type="text/css">
+    <link rel="stylesheet" href="{% static 'MenuPage.css'%}" type="text/css">
+    <script src="{% static 'GoogleMapAPI.js'%}"></script>
+    <script src="{% static 'jquery-3.4.1.js'%}"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
   <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
 </head>
-<title>Amanti Del Caffè</title>  
-<body>  
+<title>Amanti Del Caffè</title>
+<body>
     <div class="menu-wrap">
         <input type="checkbox" class="toggler">
         <div class="hamburger"><div></div></div>
@@ -31,7 +30,7 @@
                     <li><a style="color: inherit;text-decoration: none;" href="../../static/Menu_PDF.pdf">Menu PDF</a></li>
                     <li><a style="color: inherit;text-decoration: none;" href="Menu#Breakfast">Breakfast</a></li>
                     <li><a style="color: inherit;text-decoration: none;" href="Menu#Lunch">Lunch</a></li>
-                    <li><a style="color: inherit;text-decoration: none;" href="Menu#Coffee/Tea">Coffee/Tea</a></li>
+                    <li><a style="color: inherit;text-decoration: none;" href="Menu#Drinks">Drinks</a></li>
                 </ul>
                 <li><a href="/#MoreInfo">About Us</a></li>
                 <li><a href="SignUp#Contact-More">Contact Us</a></li>
@@ -52,39 +51,54 @@
               <a href="#Menu-Items"><span></span></a>
             </section>
         </div>
-   
+
     </header>
 <section>
     <div class="container-1">
-      <div class="box-1">
-          <i class="fa fa-phone"><span style="padding: 15px; font-family: 'Quicksand', sans-serif;"><a href="tel:(868) 236-8736">(868) 236-8736</a></span></i>
-          <p style="width: 250px;word-wrap: break-word; padding: 10px; text-align: justify;">A small river named Duden flows by their place and supplies.</p>
-      </div>
-      <div class="box-2">
-          <a href="https://www.google.com/maps/place/Amanti+del+caff%C3%A8/@10.448311,-61.444424,15z/data=!4m5!3m4!1s0x0:0x1799da43a5adcd78!8m2!3d10.448311!4d-61.444424" <i class="fa fa-address-book-o" href=""><span style="padding: 15px; font-family: 'Quicksand', sans-serif;">271 Southern Main Rd, Couva</span></i>
-      </a>
-          <p style="width: 250px;word-wrap: break-word; padding: 10px; text-align: justify;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut, facere!</p>
-      </div>
-      <div class="box-3">
-          <i class="fa fa-calendar-check-o"><span style="padding: 15px;  font-family: 'Quicksand', sans-serif;">Monday- Saturday 7am-5pm</span></i>
-          <p style="width: 250px;word-wrap: break-word; padding: 10px; text-align: justify;">Saturday's 8am- 5pm</p>
-      </div>
-  </div>
+        <div class="box-1">
+            <i class="fa fa-phone"><span style="padding: 15px; font-family: 'Quicksand', sans-serif;"><a href="tel:(868) 236-8736">(868) 236-8736</a></span></i>
+            <p style="width: 300px;word-wrap: break-word; padding: 10px;">Where you can find delicious treats to suit any dietary or culinary interests.</p>
+        </div>
+        <div class="box-2">
+            <a href="https://www.google.com/maps/place/Amanti+del+caff%C3%A8/@10.448311,-61.444424,15z/data=!4m5!3m4!1s0x0:0x1799da43a5adcd78!8m2!3d10.448311!4d-61.444424" <i class="fa fa-address-book-o" href=""><span style="padding: 15px; font-family: 'Quicksand', sans-serif;">271 Southern Main Rd, Couva</span></i>
+        </a>
+            <p style="width: 300px;word-wrap: break-word; padding: 10px;">A quaint little cafe that is bold in flavour!</p>
+        </div>
+        <div class="box-3">
+            <i class="fa fa-calendar-check-o"><span style="padding: 15px;  font-family: 'Quicksand', sans-serif;">Opening Hours</span></i>
+            <p style="width: 300px;word-wrap: break-word; padding: 10px;">Monday-Friday: 7am - 5pm<br> Saturday: 8am - 5pm<br>Sunday: Closed</p>
+        </div>
+    </div>
+
 </section>
 
 <section id="Menu-Items">
 <div class="background-c">
 <div class="ul-container">
   <ul>
-    <h2>Full Menu <a href="../../static/Menu_PDF.pdf" class="fa fa-folder-o" style="font-size:25px; text-decoration:none;color:inherit;"></a></h2>
+    <h2 style="font-size:20px;">Menu PDF <a href="../../static/Menu_PDF.pdf" class="fa fa-folder-o" style="font-size:25px; text-decoration:none;color:inherit;"></a></h2>
+    <section id="Drinks">
+    <h2>Drinks</h2>
+    <section id="Coffee/Tea">
+    <h1 style="font-size: 20px;">Coffee/Tea</h1>
+    {% for x in t %}
+    <li>{{x.item_name}}<span>${{x.item_price}}</span></li>
+    {% endfor %}
+    </section>
+    <h1 style="font-size: 20px;">Frappuccino</h1>
+    {% for x in f %}
+    <li>{{x.item_name}}<span>${{x.item_price}}</span></li>
+    {% endfor %}
+    <h1 style="font-size: 20px;">Smoothies</h1>
+    {% for x in sm %}
+    <li>{{x.item_name}}<span>${{x.item_price}}</span></li>
+    {% endfor %}
+    </section>
+
     <section id="Breakfast">
     <h2>Breakfast</h2>
     <h1 style="font-size: 20px;">Pancakes</h1>
     {% for x in p %}
-    <li><a data-fancybox="gallery" class="fa fa-file-image-o" href="{{x.item_picture.url}}" style="font-size:15px; text-decoration:none;color:inherit;">&nbsp;&nbsp;</a>{{x.item_name}}<span>${{x.item_price}}</span></li>
-    {% endfor %}
-    <h1 style="font-size: 20px;">Eggs/Omelette</h1>
-    {% for x in e %}
     <li>{{x.item_name}}<span>${{x.item_price}}</span></li>
     {% endfor %}
     <section id="Waffles">
@@ -92,33 +106,26 @@
     {% for x in wa %}
     <li>{{x.item_name}}<span>${{x.item_price}}</span></li>
     {% endfor %}
-</section>
-  </section>
-    <h1 style="font-size: 20px;">Bagels</h1>
-    {% for x in b %}
-    <li>{{x.item_name}}<span>${{x.item_price}}</span></li>
-    {% endfor %}
+    </section>
     <h1 style="font-size: 20px;">Toast</h1>
     {% for x in to %}
     <li>{{x.item_name}}<span>${{x.item_price}}</span></li>
     {% endfor %}
-    <h1 style="font-size: 20px;">Gluten-Free</h1>
-    {% for x in gf %}
-    <li>{{x.item_name}}<span>${{x.item_price}}</span></li>
-    {% endfor %}
-    <h1 style="font-size: 20px;">Desserts</h1>
-    {% for x in d %}
-    <li>{{x.item_name}}<span>${{x.item_price}}</span></li>
-    {% endfor %}
+    </section>
 
     <section id="Lunch">
     <h2>Lunch</h2>
     <h1 style="font-size: 20px;">Hot Pasta</h1>
+    <li style="font-weight:bold;">Served With Garlic Bread</li>
     {% for x in hp %}
     <li>{{x.item_name}}<span>${{x.item_price}}</span></li>
     {% endfor %}
-    <h1 style="font-size: 20px;">Pannis</h1>
+    <h1 style="font-size: 20px;">Paninis</h1>
     {% for x in pn %}
+    <li>{{x.item_name}}<span>${{x.item_price}}</span></li>
+    {% endfor %}
+    <h1 style="font-size: 20px;">Bagels</h1>
+    {% for x in b %}
     <li>{{x.item_name}}<span>${{x.item_price}}</span></li>
     {% endfor %}
     <h1 style="font-size: 20px;">Subs</h1>
@@ -126,40 +133,26 @@
     <li>{{x.item_name}}<span>${{x.item_price}}</span></li>
     {% endfor %}
     <h1 style="font-size: 20px;">Wraps</h1>
+    <li style="font-weight:bold;">Plain or Spinach Wraps</li>
     {% for x in w %}
-    <li>{{x.item_name}}<span>${{x.item_price}}</span></li>
-    {% endfor %}
-    <h1 style="font-size: 20px;">Salad</h1>
-    {% for x in sa %}
     <li>{{x.item_name}}<span>${{x.item_price}}</span></li>
     {% endfor %}
     <h1 style="font-size: 20px;">Fries</h1>
     {% for x in fr %}
     <li>{{x.item_name}}<span>${{x.item_price}}</span></li>
     {% endfor %}
+    <h1 style="font-size: 20px;">Salad</h1>
+    {% for x in sa %}
+    <li>{{x.item_name}}<span>${{x.item_price}}</span></li>
+    {% endfor %}
+
     </section>
 
-    <section id="Drinks">
-    <h2>Drinks</h2>
-    <h1 style="font-size: 20px;">Smoothies</h1>
-    {% for x in sm %}
-    <li>{{x.item_name}}<span>${{x.item_price}}</span></li>
-    {% endfor %}
-    <h1 style="font-size: 20px;">Frappuccino</h1>
-    {% for x in f %}
-    <li>{{x.item_name}}<span>${{x.item_price}}</span></li>
-    {% endfor %}
-    <section id="Coffee/Tea">
-    <h1 style="font-size: 20px;">Coffee/Tea</h1>
-    {% for x in t %}
-    <li>{{x.item_name}}<span>${{x.item_price}}</span></li>
-    {% endfor %}
-    </section>
-    </section>
+
   </ul>
-<br>
-</div>
 
+</div>
+<br><br>
 </div>
 
 </section>
@@ -173,7 +166,7 @@
           <br>
           <li>Address: 271 Southern Main Rd, Couva</li>
           <li>Phone: (868) 236-8736</li>
-          <li>Email: info@domain.com</li>
+          <li>Email: amantidelcafe1@gmail.com</li>
 
       </ul>
 
@@ -185,7 +178,7 @@
           <li style="font-size: 16px; font-weight: bold;color: #c49b63;">Opening Hours</li>
           <br>
           <li>Monday-Friday: 7am - 5pm</li>
-          <li>Saturday: 8am = 5pm</li>
+          <li>Saturday: 8am - 5pm</li>
           <li>Sunday: Closed</li>
 
       </ul>

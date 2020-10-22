@@ -75,11 +75,12 @@ WSGI_APPLICATION = 'armanteSite.wsgi.application'
 
 DATABASES = { 
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'nqr9rzfupf3jqbzs',
-        'USER': 'xud1fnx390hgm5lf'	,
-        'PASSWORD': 'e1sy1ukogrjf0clc',
-        'HOST': 'durvbryvdw2sjcm5.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'd6bg5k0krvief5',
+        'USER': 'hgqlondvzdjlju'	,
+        'PASSWORD': 'c47c7e3c2b8563a6e3ef87685d02270cf5b7af117c516fa403df1e9e1863e8f3',
+        'HOST': 'ec2-54-160-202-3.compute-1.amazonaws.com',
+        'PORT': '5432',
     }
 }
 

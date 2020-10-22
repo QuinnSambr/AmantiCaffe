@@ -3,7 +3,7 @@
         function initMap() {
        var cafe = {lat: 10.448311, lng: -61.444424};
           map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 21,
+            zoom: 20,
             center: cafe,
             styles: [
               {
@@ -167,25 +167,5 @@
               }
             ]
           });
-        //   var icon = {
-        //     url: "image path", // url
-        //     scaledSize: new google.maps.Size(50, 50), // size
-        // };
-        // //Maker for the Google Map 
-        // var marker = new google.maps.Marker({
-        //     position: cafe,
-        //     icon: icon,
-        //     map: map,
-        //     title:'Amanti Del Caffe'
-        // });
-    var icon = {
-          url: "image path", // url
-          scaledSize: new google.maps.Size(50, 50), // size
-      };
-  
-   marker = new google.maps.Marker({
-    position: cafe,
-    map: map,
-    icon: icon
-   });
+
     }

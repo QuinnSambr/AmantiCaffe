@@ -119,6 +119,7 @@
     <li style="font-weight:bold;">Served With Garlic Bread</li>
     {% for x in hp %}
     <li>{{x.item_name}}<span>${{x.item_price}}</span></li>
+    <li>{{x.item_description}}</li>
     {% endfor %}
     <h1 style="font-size: 20px;">Paninis</h1>
     {% for x in pn %}
@@ -141,9 +142,11 @@
     {% for x in fr %}
     <li>{{x.item_name}}<span>${{x.item_price}}</span></li>
     {% endfor %}
+    <li>(Cheese Sauce & Grilled Chicken or Chicken Rings)</li>
     <h1 style="font-size: 20px;">Salad</h1>
     {% for x in sa %}
     <li>{{x.item_name}}<span>${{x.item_price}}</span></li>
+    <li>{{x.item_description}}</li>
     {% endfor %}
 
     </section>

@@ -19,7 +19,7 @@ def Menu(request):
     data_dict = {
         'p': 'PANCAKE',
         'e': 'EGG',
-        'pn': 'PANNIS',
+        'pn': 'PANINIS',
         's': 'SUBS',
         'w': 'WRAPS',
         't': 'TEA',

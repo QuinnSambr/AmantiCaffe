@@ -23,7 +23,7 @@ SECRET_KEY = 'w@6ms=l0axfdb9n=ql88o5i7arjkd30ulo6d3!5o#4#5^hybt^'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['www.amanticaffe.com','amanti-caffe.herokuapp.com']
+ALLOWED_HOSTS = ['www.amanticaffe.com','amanti-caffe.herokuapp.com','*']
 
 
 # Application definition

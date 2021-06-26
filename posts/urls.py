@@ -8,4 +8,5 @@ urlpatterns=[
     url(r'^$',views.index , name='index'),
     path('Menu',views.Menu , name='Menu'),
     path('SignUp',views.SignUp, name='SignUp'),
+    path('Order', views.Order, name='Order'),
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

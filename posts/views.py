@@ -9,8 +9,6 @@ from django.core.exceptions import ValidationError
 from django.core.validators import validate_email
 
 
-# Create your views here.
-
 def index(request):
     return render(request,'posts/index.html')
 
@@ -43,7 +41,6 @@ def Menu(request):
 
 
 def SignUp(request):
-
         if request.method == 'POST':
                 post=NewsLetter()
                 try:
@@ -65,4 +62,13 @@ def SignUp(request):
 
         else:
                 return render(request,'posts/EmailSignUp.html')
+
+
+
+def Order(request):
+    menu_item= ['FRAPPE','TEA','SUBS']
+    context = {
+        'itemA':MenuItem.objects.filter(item_category__icontains=menu_item[0])
+    }
+    return render(request,'posts/add_to_cart.html',context)
 
